@@ -1,14 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Onja Kitchen App</title>
 </head>
+
 <body>
 
+    <header>
+        <img src="images/plate.svg" alt="Onja Logo">
+        <div class="request-account"><a href="#">Request Account</a></div>
+    </header> 
+    <!-- Header section end -->
+
+    <!-- Form Section -->
+    <section>
+
+        <form>
+            <!-- User Accounts form section -->
+            <div class="user-accounts">
+
+                <!-- Admin form group -->
+                <div class="form-group-radio">
+                    <label for="admin-account">
+                        <input type="radio" name="account" id="admin-account" value="admin">
+                        <img src="images/login-avatars/man.svg" alt="Admin Avatar">
+                    </label>
+                    <p>Admin</p>
+                </div>
+                <!-- Admin Form Group End  -->
+
+                <!-- Chef form group -->
+                <div class="form-group-radio">
+                    <label for="chef-account">
+                        <input type="radio" name="account" id="chef-account" value="chef">
+                        <img src="images/login-avatars/chef.svg" alt="Chef Avatar">
+                    </label>
+                    <p>Chef</p>
+                </div>
+                <!-- Chef Form Group End  -->
+
+                <!-- User form group -->
+                <div class="form-group-radio">
+                    <label for="user-account">
+                        <input type="radio" name="account" id="user-account" value="user">
+                        <img src="images/login-avatars/girl.svg" alt="User Avatar">
+                    </label>
+                    <p>User</p>
+                </div>
+                <!-- User Form Group End  -->
+
+            </div>
+            <!-- User Acoounts end -->
+
+            <!-- Email Input -->
+            <div class="form-group">
+                <label for="email"> Email</label>
+                <input type="email" placeholder="john@example.com">
+            </div>
+
+            <!-- Password Input -->
+            <div class="form-group">
+                <label for="password"> Password </label>
+                <input type="password">
+            </div>
+
+            <!-- Submit  -->
+
+            <input type="submit" value="Sign In">
+
+        </form>
+
+    </section>
+    <!-- Form section end -->
     
-    
+
 </body>
+
 </html>
