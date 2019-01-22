@@ -1,2 +1,4 @@
 # kitchenApp-ui
-Front end Kitchen App
+
+The Front-end code for the a kitchen Management application. 
+
