@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index.css">
     <title>Onja Kitchen App</title>
 </head>
 
@@ -13,68 +16,72 @@
     <header>
         <img src="images/plate.svg" alt="Onja Logo">
         <div class="request-account"><a href="html/request-account.html">Request Account</a></div>
-    </header> 
+    </header>
     <!-- Header section end -->
 
     <!-- Form Section -->
-    <section>
+    <section class="welcome-form">
 
-        <h2>Welcome to Onja</h2>
+        <div class="welcome-form-section">
+            <h2>Welcome to Onja</h2>
 
-        <form>
-            <!-- User Accounts form section -->
-            <div class="user-accounts">
+            <form>
+                <!-- User Accounts form section -->
+                <p class="role-label">What is your Role ?</p>
+                <div class="user-accounts">
 
-                <!-- Admin form group -->
-                <div class="form-group-radio">
-                    <label for="admin-account">
-                        <input type="radio" name="account" id="admin-account" value="admin">
-                        <img src="images/login-avatars/man.svg" alt="Admin Avatar">
-                    </label>
-                    <p>Admin</p>
+                    <!-- Admin form group -->
+                    <div class="form-group-radio">
+                        <label for="admin-account">
+                            <input type="radio" name="account" id="admin-account" value="admin">
+                            <img src="images/login-avatars/man.svg" alt="Admin Avatar">
+                        </label>
+                        <p>Admin</p>
+                    </div>
+                    <!-- Admin Form Group End  -->
+
+                    <!-- Chef form group -->
+                    <div class="form-group-radio">
+                        <label for="chef-account">
+                            <input type="radio" name="account" id="chef-account" value="chef">
+                            <img src="images/login-avatars/chef.svg" alt="Chef Avatar">
+                        </label>
+                        <p>Chef</p>
+                    </div>
+                    <!-- Chef Form Group End  -->
+
+                    <!-- User form group -->
+                    <div class="form-group-radio">
+                        <label for="user-account">
+                            <input type="radio" name="account" id="user-account" value="user">
+                            <img src="images/login-avatars/girl.svg" alt="User Avatar">
+                        </label>
+                        <p>User</p>
+                    </div>
+                    <!-- User Form Group End  -->
+
                 </div>
-                <!-- Admin Form Group End  -->
+                <!-- User Acoounts end -->
 
-                <!-- Chef form group -->
-                <div class="form-group-radio">
-                    <label for="chef-account">
-                        <input type="radio" name="account" id="chef-account" value="chef">
-                        <img src="images/login-avatars/chef.svg" alt="Chef Avatar">
-                    </label>
-                    <p>Chef</p>
+                <!-- Email Input -->
+                <div class="form-group">
+                    <label for="email"> Email</label>
+                    <input type="email" placeholder="john@example.com">
                 </div>
-                <!-- Chef Form Group End  -->
 
-                <!-- User form group -->
-                <div class="form-group-radio">
-                    <label for="user-account">
-                        <input type="radio" name="account" id="user-account" value="user">
-                        <img src="images/login-avatars/girl.svg" alt="User Avatar">
-                    </label>
-                    <p>User</p>
+                <!-- Password Input -->
+                <div class="form-group">
+                    <label for="password"> Password </label>
+                    <input type="password">
                 </div>
-                <!-- User Form Group End  -->
 
-            </div>
-            <!-- User Acoounts end -->
+                <!-- Submit  -->
+                <div class="submit-button">
+                    <input type="submit" value="Sign In">
+                </div>
 
-            <!-- Email Input -->
-            <div class="form-group">
-                <label for="email"> Email</label>
-                <input type="email" placeholder="john@example.com">
-            </div>
-
-            <!-- Password Input -->
-            <div class="form-group">
-                <label for="password"> Password </label>
-                <input type="password">
-            </div>
-
-            <!-- Submit  -->
-
-            <input type="submit" value="Sign In">
-
-        </form>
+            </form>
+        </div>
 
     </section>
     <!-- Form section end -->
@@ -83,7 +90,7 @@
         <img src="images/plate.svg" alt="Onja Logo">
         <p>&copy; 2019 James Muriuki</p>
     </footer>
-    
+
 
 </body>
 
