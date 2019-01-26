@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../css/request-account.css">
     <title>Onja - Request Account</title>
 </head>
 
@@ -18,45 +20,49 @@
 
     <!-- Request account section -->
 
-    <section class="onjaNewForm">
-        <h2>Request for a New Onja Account</h2>
+    <section class="onjaNewForm-section">
 
-        <!-- Form -->
-        <form>
-            <!-- username -->
-            <div class="form-group">
-                <label for="Name">Fullname</label>
-                <input type="text" placeholder="John Doe">
-            </div>
+        <div class="onjaNewForm">
+            <h2>Request for a New Onja Account</h2>
 
-            <!-- Email and Role -->
-            <div class="email-role">
-                <!-- Email -->
+            <!-- Form -->
+            <form>
+                <!-- username -->
                 <div class="form-group">
-                    <label for="Email">Email</label>
-                    <input type="email" placeholder="john@example.com">
+                    <label for="Name">Fullname</label>
+                    <input type="text" placeholder="John Doe">
                 </div>
 
-                <!-- Role -->
-                <div class="form-group">
-                    <label for="role">Role</label>
-                    <select name="role" id="role">
-                        <option value="EIT">EIT</option>
-                        <option value="Mincf">Minc Fellow</option>
-                        <option value="Mestf">MEST Fellow</option>
-                        <option value="pc">Porfolio Company</option>
-                    </select>
+                <!-- Email and Role -->
+                <div class="email-role">
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="email" placeholder="john@example.com">
+                    </div>
+
+                    <!-- Role -->
+                    <div class="form-group">
+                        <label for="role">Role</label>
+                        <select name="role" id="role">
+                            <option value="EIT">EIT</option>
+                            <option value="Mincf">Minc Fellow</option>
+                            <option value="Mestf">MEST Fellow</option>
+                            <option value="pc">Porfolio Company</option>
+                        </select>
+                    </div>
+                    <!-- End of role -->
                 </div>
-                <!-- End of role -->
-            </div>
 
-            <!-- Submit -->
-            <input type="submit" value="Request Account">
+                <!-- Submit -->
+                <div class="submit-button">
+                    <input type="submit" value="Request Account">
+                </div>
+                <p class="signInHere">Have and Account? <a href="../index.html">Sign in here</a></p>
 
-            <p class="signInHere">Have and Account? <a href="../index.html">Sign in here</a></p>
-
-        </form>
-        <!-- End of Form  -->
+            </form>
+            <!-- End of Form  -->
+        </div>
     </section>
 
     <!-- Footer -->
