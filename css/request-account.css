@@ -157,7 +157,6 @@ footer img {
     /* Email role inputs */
     .email-role{
         display: flex;
-        justify-content: space-around;
     }
     .email-role .form-group{
         flex: 1;
