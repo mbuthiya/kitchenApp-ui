@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../css/orders.css">
     <title>Onja - Orders</title>
 </head>
 
@@ -12,7 +14,7 @@
 
     <!-- Header -->
     <header>
-        <div>
+        <div class="logo">
             <img src="../images/plate.svg" alt="Onja Logo">
 
         </div>
@@ -20,13 +22,13 @@
         <div class="navigation">
             <nav>
                 <ul>
-                    <li>My Order</li>
-                    <li>Menu</li>
+                    <li> <a href="#">My Order</a> </li>
+                    <li> <a href="menu.html"> Menu</a></li>
                 </ul>
             </nav>
 
             <div class="gravatar">
-                <img src="../images/plate.svg" alt="Onja Logo">
+                <img src="../images/login-avatars/girl.svg" alt="Onja Logo">
             </div>
         </div>
         <!-- End Navigation -->
@@ -34,7 +36,7 @@
     <!-- End of header  -->
 
     <section class="my-menu">
-        <h2>Your Weeks Menu</h2>
+        <h2 class="header">Your Weeks Menu</h2>
 
         <table>
             <tr>
@@ -47,14 +49,14 @@
                 <td class="day">Mon <span></span></td>
                 <td>
                     <figure>
-                        <img src="../images/potatoes.svg" alt="">
+                        <img src="../images/foods/chickenSalad.jpg" alt="">
                         <figcaption> Potato salad with Chicken</figcaption>
                     </figure>
                 </td>
                 <td>
                     <figure>
-                        <img src="../images/potatoes.svg" alt="">
-                        <figcaption> Eba with Groundnut soup</figcaption>
+                        <img src="../images/foods/pasta.jpg" alt="">
+                        <figcaption> Pasta Beef </figcaption>
                     </figure>
                 </td>
             </tr>
@@ -63,14 +65,14 @@
                 <td class="day">Tue <span></span></td>
                 <td>
                     <figure>
-                        <img src="../images/potatoes.svg" alt="">
-                        <figcaption> Potato salad with Chicken</figcaption>
+                        <img src="../images/foods/jollof.jpg" alt="">
+                        <figcaption> Jollof rice with chicken</figcaption>
                     </figure>
                 </td>
                 <td>
                     <figure>
-                        <img src="../images/potatoes.svg" alt="">
-                        <figcaption> Eba with Groundnut soup</figcaption>
+                        <img src="../images/foods/kenkey.png" alt="">
+                        <figcaption>Kenkey</figcaption>
                     </figure>
                 </td>
             </tr>
@@ -79,14 +81,14 @@
                 <td class="day">Wed <span></span></td>
                 <td>
                     <figure>
-                        <img src="../images/potatoes.svg" alt="">
-                        <figcaption> Potato salad with Chicken</figcaption>
+                        <img src="../images/foods/PlantainSalad.jpg" alt="">
+                        <figcaption> Plantain Salad</figcaption>
                     </figure>
                 </td>
                 <td>
                     <figure>
-                        <img src="../images/potatoes.svg" alt="">
-                        <figcaption> Eba with Groundnut soup</figcaption>
+                        <img src="../images/foods/chickenFries.jpg" alt="">
+                        <figcaption> Potato fries and chicken</figcaption>
                     </figure>
                 </td>
             </tr>
@@ -95,14 +97,14 @@
                 <td class="day">Thr <span></span></td>
                 <td>
                     <figure>
-                        <img src="../images/potatoes.svg" alt="">
-                        <figcaption> Potato salad with Chicken</figcaption>
+                        <img src="../images/foods/fufuWithBeef.jpg" alt="">
+                        <figcaption> Fufu with beef soup</figcaption>
                     </figure>
                 </td>
                 <td>
                     <figure>
-                        <img src="../images/potatoes.svg" alt="">
-                        <figcaption> Eba with Groundnut soup</figcaption>
+                        <img src="../images/foods/plantainStirFry.JPG" alt="">
+                        <figcaption> Plantain with Stir fry</figcaption>
                     </figure>
                 </td>
             </tr>
@@ -111,14 +113,14 @@
                 <td class="day">Fri <span></span></td>
                 <td>
                     <figure>
-                        <img src="../images/potatoes.svg" alt="">
-                        <figcaption> Potato salad with Chicken</figcaption>
+                        <img src="../images/foods/fishAndRice.jpg" alt="">
+                        <figcaption> Fish and Rice</figcaption>
                     </figure>
                 </td>
                 <td>
                     <figure>
-                        <img src="../images/potatoes.svg" alt="">
-                        <figcaption> Eba with Groundnut soup</figcaption>
+                        <img src="../images/foods/tunaSalad.jpg" alt="">
+                        <figcaption>Tuna and Potato salad </figcaption>
                     </figure>
                 </td>
             </tr>
@@ -130,7 +132,7 @@
 
     <section class="modal">
         <h3>Lunch Review: Potato Salad with chicken</h3>
-        <h4> What did you think about your meal</h4>
+        <h4> What did you think about your meal?</h4>
 
         <!-- Review form -->
         <form>
@@ -139,40 +141,40 @@
                 <!-- disgusting -->
                 <div class="form-group-radio">
                     <label for="disgusting">
-                        disgusting
                         <input type="radio" name="rating" id="disgusting" value="1">
+                        <img src="../images/emojis/ill.svg" alt="">
                     </label>
                 </div>
 
                 <!-- bad -->
                 <div class="form-group-radio">
                     <label for="bad">
-                        bad
                         <input type="radio" name="rating" id="bad" value="2">
+                        <img src="../images/emojis/confused.svg" alt="">
                     </label>
                 </div>
 
                 <!-- ok -->
                 <div class="form-group-radio">
                     <label for="okay">
-                        It was okay
                         <input type="radio" name="rating" id="okay" value="3">
+                        <img src="../images/emojis/suspicious.svg" alt="">
                     </label>
                 </div>
 
                 <!-- I Liked it -->
                 <div class="form-group-radio">
                     <label for="like">
-                        I Liked it
                         <input type="radio" name="rating" id=like value="4">
+                        <img src="../images/emojis/happy.svg">
                     </label>
                 </div>
 
                 <!-- I Loved it -->
                 <div class="form-group-radio">
                     <label for="love">
-                        I Liked it
                         <input type="radio" name="rating" id=love value="5">
+                        <img src="../images/emojis/in-love.svg" alt="">
                     </label>
                 </div>
 
@@ -184,7 +186,10 @@
             </div>
 
             <!-- Submit button -->
-           <input type="submit" value="Submit Review">
+            <div class="submit-button">
+                <input type="submit" value="Submit Review">
+            </div>
+
         </form>
     </section>
 
